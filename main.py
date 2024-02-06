@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from langchain_helper import agent_executer
+from langchain_helper import agent_executor
 
 app = FastAPI()
 

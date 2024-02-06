@@ -43,7 +43,7 @@ class ColumnHookTool(BaseTool):
         raise NotImplementedError("This tool does not support async")
 
 tools = [ColumnHookTool()]
-
+llm = Ollama(model="llama2", temperature = 0)
 prompt = hub.pull("hwchase17/react")
 
 sys_prompt = '''Answer the following questions as best you can. You are not good at modifying phone numbers so
